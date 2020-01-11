@@ -29,6 +29,4 @@ def lcdCtrl():
         except:
             lcd.write_center("Stablizing", "...")
             sleep(sleep_timeout)
-            for i in range(0,5):
-                lcd.clear()
 
