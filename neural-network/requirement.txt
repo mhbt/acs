@@ -1,0 +1,5 @@
+Pillow
+numpy==1.16.6
+matplotlib==3.0.3
+tensorflow==1.14.0
+keras==2.1.5
