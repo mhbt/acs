@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <title>ECIOT</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- Morries chart CSS -->
+    <link href="./assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- fontawesome CDN -->
+    <!-- <link rel="stylesheet" href="./dark/css/font-awesome/css/font-awesome.css"> -->
+
+
+    <!-- Custom CSS -->
+    <link href="./dark/css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="./dark/css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131112149-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131112149-2');
+    </script>
+
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header py-2">
+
+                    <a class="navbar-brand py-1" href="index.html">
+                        <!-- <div class="container">
+                            <div class="row">
+                                    <div class="col-md-6">
+                                            <h5>
+                                                    ECIOT
+                                                </h5>
+    
+    
+                                    </div>
+                                <div class="col-md-6">
+                                        <h5>
+                                                ECIOT
+                                            </h5>
+
+
+                                </div>
+
+                            </div>
+
+                        </div> -->
+                        <!-- Logo icon -->
+                        <!-- <b> -->
+                        <!-- You can put here icon as well // <i class="wi wi-sunset"></i> -->
+                        <!-- Dark Logo icon -->
+                        <!-- <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo"/> -->
+                        <!-- <img style="border-radius: 10px; height:70px; width:70px;" src="../assets/images/download.jpg"/> -->
+                        <!-- Light Logo icon -->
+                        <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+
+                        <!-- </b> -->
+                        <!-- End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                            <!-- dark Logo text -->
+                            <span
+                                style="color:aliceblue; font-size:40px; font-weight: 700; margin-left: 10px; margin-top: 5px;">
+                                ECIOT
+                            </span>
+                            <!-- <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo"> -->
+                            <!-- Light Logo text -->
+                            <!-- <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
+                        </span>
+
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a
+                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item m-l-10"> <a
+                                class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="./assets/images/users/17.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="./assets/images/users/17.jpg" alt="user">
+                                            </div>
+                                            <div class="u-text">
+                                                <h4>Faisal chaudhary</h4>
+                                                <p class="text-muted">mfaisal66@gmail.com</p><a
+                                                    href="pages-profile.html"
+                                                    class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+                <div class="user-profile">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="./assets/images/users/17.jpg" alt="user" />
+                        <!-- this is blinking heartbit-->
+                        <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
+                    </div>
+                    <!-- User profile text-->
+                    <div class="profile-text social-listt">
+                        <h5>GREEN PAKISTAN</h5>
+                        <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                        <a href="app-email.html" class="" data-toggle="tooltip" title="Email"><i
+                                class="mdi mdi-gmail"></i></a>
+                        <a href="pages-login.html" class="" data-toggle="tooltip" title="Logout"><i
+                                class="mdi mdi-power"></i></a>
+
+                        <div class="dropdown-menu animated flipInY">
+                            <!-- text-->
+                            <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <!-- text-->
+                            <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                            <!-- text-->
+                            <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                            <!-- text-->
+                            <div class="dropdown-divider"></div>
+                            <!-- text-->
+                            <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <!-- text-->
+                            <div class="dropdown-divider"></div>
+                            <!-- text-->
+                            <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                            <!-- text-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                        <ul id="sidebarnav">
+                            <li class="nav-devider"></li>
+                            <li class="nav-small-cap">PERSONAL</li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i
+                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="index.html">Home</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-shower fa-3x"></i><span class="hide-menu">Soil Mositure </a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="dailysoilmoisture.html">Daily</a></li>
+                                    <li><a href="weeklysoilmoisture.html">Weekly</a></li>
+                                    <li><a href="monthlysoilmositure.html">Monthly</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                    <i class="icon-chemistry"></i>
+                                <span class="hide-menu">NPK </a>
+                                <ul aria-expanded="false" class="collapse">
+                                        <li><a href="dailynpk.html">Daily</a></li>
+                                    <li><a href="weeklynpk.html">Weekly</a></li>
+                                    <li><a href="monthlynpk.html">Monthly</a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-oil-temperature"></i><span class="hide-menu">Temperature </a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="dailytemperature.html">Daily</a></li>
+                                    <li><a href="weeklytemperature.html">Weekly</a></li>
+                                    <li><a href="monthlytemperature.html">Monthly</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-amazon-clouddrive"></i><span class="hide-menu">Humidity </a>
+                                <ul aria-expanded="false" class="collapse">
+                                        <li><a href="dailyhumidity.html">Daily</a></li>
+                                        <li><a href="weeklyhumidity.html">Weekly</a></li>
+                                        <li><a href="monthlyhumidity.html">Monthly</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chemical-weapon"></i><span class="hide-menu">Soil PH </a>
+                                <ul aria-expanded="false" class="collapse">
+                                        <li><a href="dailysoilph.html">Daily</a></li>
+                                        <li><a href="weeklysoilph.html">Weekly</a></li>
+                                        <li><a href="monthlysoilph.html">Monthly</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chemical-weapon"></i><span class="hide-menu">water Usage </a>
+                                <ul aria-expanded="false" class="collapse">
+                                        <li><a href="dailywaterusage.html">Daily</a></li>
+                                        <li><a href="weeklywaterusage.html">Weekly</a></li>
+                                        <li><a href="monthlywaterusage.html">Monthly</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor text-capitalize">E-culitvation using internet of things</h3>
+                </div>
+                <div class="col-md-7 align-self-center">
+
+                </div>
+                <div>
+                    <button
+                        class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i
+                            class="ti-settings text-white"></i></button>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap">
+                            <div>
+                                <h4 class="card-title">Weekly Graph</h4>
+                            </div>
+                            <div class="ml-auto text-center">
+                                <ul class="list-inline ">
+
+                                    <li>
+                                        <h6 style="color:#89763C"></h6><i class="fa fa-circle font-10 m-r-10"></i>SOIL
+                                        DRYNESS</h6>
+                                    </li>
+
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div id="morris-area-chart2" style="height: 405px;"></div> -->
+                        <div id="humidity1"></div>
+
+                    </div>
+                </div>
+                <div class="right-sidebar">
+                        <div class="slimscrollright">
+                            <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
+                            </div>
+                            <div class="r-panel-body">
+                                <ul id="themecolors" class="m-t-20">
+                                    <li style="display: block"><b>Motor <span class="ml-4"
+                                                style="float:right !important"><input name="motor-status" type="checkbox"
+                                                    checked data-toggle="toggle" data-size="small"></span></b></li>
+                                    <hr>
+                                    <li style="display: block"><b>Buzzer <span class="ml-4"
+                                                style="float:right !important"><input name="buzzer-status" type="checkbox"
+                                                    checked data-toggle="toggle" data-size="small"></span></b></li>
+                                    <hr>
+                                    <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                    <li><a href="javascript:void(0)" data-theme="default-dark"
+                                            class="default-dark-theme">7</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a>
+                                    </li>
+                                    <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="blue-dark"
+                                            class="blue-dark-theme working">10</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="purple-dark"
+                                            class="purple-dark-theme">11</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme">12</a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer style="color:aliceblue;" class="footer text-center">
+                2019 copyright © by E-Cultivation using IoT
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="./dark/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="./dark/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="./dark/js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="./assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="./dark/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="./assets/plugins/raphael/raphael-min.js"></script>
+    <script src="./assets/plugins/morrisjs/morris.min.js"></script>
+    <!-- sparkline chart -->
+    <script src="./assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="./assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+    
+    <script src="./dark/js/weekly/humidity/weeklyhumidity1.js"></script>
+
+    
+    <script src="./dark/js/graph/graph.js"></script>
+    <script src="./dark/js/npk/npkgraph.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            type: "GET",
+            url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/motor-status/data/last/",
+            contentType: "application/json",
+            beforeSend: function (jqXHR, settings) {
+                jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+                jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+            },
+            success: function (json) {
+                console.log(json);
+                $("input[name='motor-status']").bootstrapToggle(json.value == 1 ? 'on' : 'off');
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log("error :" + XMLHttpRequest.responseText);
+            }
+        });
+
+        $.ajax({
+            type: "GET",
+            url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/buzzer/data/last/",
+            contentType: "application/json",
+            beforeSend: function (jqXHR, settings) {
+                jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+                jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+                // jqXHR.setRequestHeader("Access-Control-Allow-Origin", "*");
+            },
+            success: function (json) {
+                console.log(json);
+                $("input[name='buzzer-status']").bootstrapToggle(json.value == 1 ? 'on' : 'off');
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log("error :" + XMLHttpRequest.responseText);
+            }
+        });
+        setTimeout(() => {
+            $(function () {
+                $("input[name='motor-status']").change(function () {
+                    console.log(this.checked);
+                    let data = { "value": this.checked == 1 ? "1" : "0" };
+                    data = JSON.stringify(data);
+                    $.ajax({
+                        type: "POST",
+                        url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/motor-status/data",
+                        crossDomain: true,
+                        dataType: 'json',
+                        contentType: "application/json",
+                        data: data,
+                        beforeSend: function (jqXHR, settings) {
+                            jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+                            jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+                        },
+                        success: function (json) {
+                            console.log(json);
+                            // $("input[name='motor-status']").bootstrapToggle(json.value == 1 ? 'on' : 'off' );
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log("error :" + XMLHttpRequest.responseText);
+                            // $("input[name='motor-status']").bootstrapToggle('off' );
+                        }
+                    });
+                });
+            });
+            $(function () {
+                $("input[name='buzzer-status']").change(function () {
+                    console.log(this.checked);
+                    let data = { "value": this.checked == 1 ? "1" : "0" };
+                    data = JSON.stringify(data);
+                    $.ajax({
+                        type: "POST",
+                        url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/buzzer/data",
+                        contentType: "application/json",
+                        crossDomain: true,
+                        dataType: 'json',
+                        data: data,
+                        beforeSend: function (jqXHR, settings) {
+                            jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+                            jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+                        },
+                        success: function (json) {
+                            // $("input[name='buzzer-status']").bootstrapToggle(json.value == 1 ? 'on' : 'off' );
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log("error :" + XMLHttpRequest.responseText);
+                            // $("input[name='buzzer-status']").bootstrapToggle('off' );
+                        }
+                    });
+                });
+            });
+        }, 2000);
+
+    </script>
+    <script>
+        // $.ajax({
+        // type: "GET", 
+        // url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/temp/data",
+        // contentType: "application/json",
+        // beforeSend: function(jqXHR, settings){
+        //         jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+        //         jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+        //         },
+        // success: function(json){
+        //     console.log(json);
+        // },
+        // error: function (XMLHttpRequest, textStatus, errorThrown) {
+        //                     console.log("error :"+XMLHttpRequest.responseText);
+        //             }
+        // });
+
+
+
+        // $.ajax({
+        // type: "GET", 
+        // url: "https://io.adafruit.com/api/v2/imranshahzad/feeds/ph/data/last",
+        // contentType: "application/json",
+        // beforeSend: function(jqXHR, settings){
+        //         jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
+        //         jqXHR.setRequestHeader("X-AIO-Key", "6abf656d698d43ccb2bc2e6e2f840d0e");
+        //         },
+        // success: function(json){
+        //     console.log(json);
+        // },
+        // error: function (XMLHttpRequest, textStatus, errorThrown) {
+        //                     console.log("error :"+XMLHttpRequest.responseText);
+        //             }
+        // });
+    </script>
+</body>
+
+</html>
