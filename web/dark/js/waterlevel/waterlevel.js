@@ -57,7 +57,7 @@
             contentType: "application/json",
             beforeSend: function(jqXHR, settings){
                     jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
-                    jqXHR.setRequestHeader("X-AIO-Key", "aio_yzoE283hddW3jnp4lTaaHZp4tH19");
+                    jqXHR.setRequestHeader("X-AIO-Key", KEY);
                     },
             success: function(json){
                 gauge3.value  = json.value
@@ -74,7 +74,7 @@
                 contentType: "application/json",
                 beforeSend: function(jqXHR, settings){
                         jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
-                        jqXHR.setRequestHeader("X-AIO-Key", "aio_yzoE283hddW3jnp4lTaaHZp4tH19");
+                        jqXHR.setRequestHeader("X-AIO-Key", KEY);
                         },
                 success: function(json){
                     gauge3.value  = json.value

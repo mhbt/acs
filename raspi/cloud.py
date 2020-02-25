@@ -29,22 +29,6 @@ def syncOnce():
             client.connect()
             client.loop_background()
             break
-        except errors.AdafruitIOError:
-            aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
-            important_messages.insert(0, {
-            "title": "Sync",
-            "value": "Failed"
-            })
-            client.connect()
-            client.loop_background()
-        except exceptions.ConnectionError:
-            aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
-            important_messages.insert(0, {
-            "title": "Sync",
-            "value": "Failed"
-            })
-            client.connect()
-            client.loop_background()
         except:
             print("Internet Connection Error")
             aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
@@ -58,7 +42,7 @@ def syncOnce():
 
 def pushAndPull():
     global aio
-    client.connect() #try to connect mqqtt
+    # client.connect() #try to connect mqqtt
     while True:
         sleep(20)
         important_messages.insert(0,{
@@ -66,7 +50,7 @@ def pushAndPull():
             "value": "..."
         })
         try:
-            print("Sync Starting")
+            print("Cloud Sync Starting")
             aio.send('ph', serialjson.data["ph"])
             aio.send('temperature', serialjson.data["temperature"])
             aio.send('humidity', serialjson.data["humidity"])
@@ -74,7 +58,7 @@ def pushAndPull():
             aio.send('reservoir', serialjson.data["reservoir"])
             aio.send('motor', "1" if serialjson.data["motor"] == True else "0")
             data = aio.receive("motor-status")
-            print("Sync Ended")
+            print("Cloud Sync Ended")
             serialjson.wdata = {
                     'motor-status': bool(int(data.value))
                 }
@@ -82,24 +66,6 @@ def pushAndPull():
             "title": "Cloud Sync",
             "value": "Succesful"
             })
-        except errors.AdafruitIOError:
-            print("Adafruit Connection Error")
-            aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
-            important_messages.insert(0,{
-            "title": "Cloud Sync",
-            "value": "Failed"
-            })
-            client.connect()
-            client.loop_background()
-        except exceptions.ConnectionError:
-            print("Internet Connection Error")
-            aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
-            important_messages.insert(0,{
-            "title": "Cloud Sync",
-            "value": "Failed"
-            })
-            client.connect()
-            client.loop_background()
         except:
             print("Internet Connection Error")
             aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
@@ -109,6 +75,7 @@ def pushAndPull():
             })
             client.connect()
             client.loop_background()
+            continue
 
 
 ## MQTT Connections

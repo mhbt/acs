@@ -32,13 +32,14 @@
 
 
 <script type="text/javascript">
+        var KEY = "aio_Wffa53LmxJ39Oqhz21CiZvvCcgXO";
         $.ajax({
             type: "GET",
             url: "https://io.adafruit.com/api/v2/ai_eciot/feeds/motor-status/data/last/",
             contentType: "application/json",
             beforeSend: function (jqXHR, settings) {
                 jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
-                jqXHR.setRequestHeader("X-AIO-Key", "aio_yzoE283hddW3jnp4lTaaHZp4tH19");
+                jqXHR.setRequestHeader("X-AIO-Key", KEY);
             },
             success: function (json) {
                 console.log(json);
@@ -81,7 +82,7 @@
                         data: data,
                         beforeSend: function (jqXHR, settings) {
                             jqXHR.setRequestHeader("Accept", "application/json; charset=utf-8");
-                            jqXHR.setRequestHeader("X-AIO-Key", "aio_yzoE283hddW3jnp4lTaaHZp4tH19");
+                            jqXHR.setRequestHeader("X-AIO-Key", KEY);
                         },
                         success: function (json) {
                             console.log(json);
